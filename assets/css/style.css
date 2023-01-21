@@ -93,3 +93,28 @@ textarea {
   transition: all 0.3s ease-in-out;
   color: #000;
 }
+
+@media only screen and (max-width: 768px) {
+  .row {
+    height: 200px;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .hour {
+    border: 1px #000000;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: teal;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+
+  .saveBtn {
+    border-top: 1px solid black;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 0;
+    font-size: 1.2rem;
+  }
+}

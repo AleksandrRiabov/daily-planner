@@ -1,5 +1,5 @@
 import { workingHours } from "./data.js";
-const today = moment.utc();
+const today = moment();
 
 $(function () {
   //Get current day for jumbotron
@@ -27,11 +27,11 @@ $(function () {
       : "present";
 
     return `
-        <div  data-hour=${time}  data-index=${index} class="row">
-          <div  class="hour col-sm-1">${time}</div>
-          <textarea class='${textareaClass} col-sm-10'>${message || ""}</textarea>
-          <button class="saveBtn col-sm-1">
-          <i class="fas fa-save"></i>
+        <div data-hour=${time}  data-index=${index} class="row">
+          <div  class="hour col-sm-12 col-md-1">${time.replace(":", "")}</div>
+          <textarea class='${textareaClass} col-sm-12 col-md-10'>${message || ""}</textarea>
+          <button class="saveBtn col-sm-12 col-md-1">
+             <i class="fas fa-save"></i>
           </button>
         </div>
       `;
