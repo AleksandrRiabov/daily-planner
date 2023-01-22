@@ -21,14 +21,11 @@ textarea {
   border-bottom: 10px solid black;
 }
 
-.description {
-  white-space: pre-wrap;
-}
-
 .time-block {
   text-align: center;
   border-radius: 15px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 #notification {
@@ -60,6 +57,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 .past {
@@ -94,6 +92,9 @@ textarea {
   color: #000;
 }
 
+
+
+/* For small screens */
 @media only screen and (max-width: 768px) {
   .row {
     height: 200px;
