@@ -1,5 +1,18 @@
 # Daily Planner
 
+## Technologies used
+
+[![HTML Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](#)
+[![CSS Badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](#)
+[![Javascript Badge](https://img.shields.io/badge/-Javascript-F0DB4F?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F0DB4F)](#)
+[![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+)](#)
+[![Moment.JS Badge](https://img.shields.io/badge/-Moment.JS-black?style=for-the-badge)](#)
+[![Font Awesome Badge](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white
+)](#)
+
+
+
 ## Description 
 The daily planner app allows you to add information for each working hour of the day. The current hour is highlighted in red, the timeslot which already 
 in the past is grey and future timeslots are highlighted in green colour.
@@ -23,9 +36,3 @@ After the Save button is clicked, all changes for the relevant hour will be save
 [Aleksandr Riabov](https://github.com/AleksandrRiabov) :clap:
 
 
-## Technologies used
-jQuery, Moment.js
-![badmath](https://img.shields.io/badge/-CSS-blue)
-![badmath](https://img.shields.io/badge/-HTML-blue)
-![badmath](https://img.shields.io/badge/-JavaScript-red)
-![badmath](https://img.shields.io/badge/4.7-Bootstrap-blue)
