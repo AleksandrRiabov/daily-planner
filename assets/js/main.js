@@ -5,18 +5,18 @@ $(function () {
   //Get current day for header / jumbotron
   $("#currentDay").text(currentTime.format("dddd, MMMM, Do"));
 
-  //Check if hours exist in localstorage if not use initial array from data file
+  //Check if hours exist in the localStorage, if not use initial array from the data file
   let hours = JSON.parse(localStorage.getItem("hours")) || workingHours;
 
-  //Append timeBlock ellement wrapper to the page
-  const timeBlockEl = $("<div>").addClass("time-block");
+  // Get container element from HTML
+  const timeBlocksContainer = $(".time-blocks");
 
-  //Function to cretae new row (single hour info)
+  //Function to create new row (single hour info block)
   function createHourRow(hour, index) {
     const { time, message } = hour;
     const rowTime = moment(time, "h:Aa");
 
-    //Assign appropriate class based on current time
+    //Assign class based on the current time
     const textareaClass = currentTime.isAfter(rowTime, "hour")
       ? "past"
       : currentTime.isBefore(rowTime, "hour")
@@ -34,13 +34,13 @@ $(function () {
       `;
   }
 
-  //Generate timeblock for each working hour and append totimeBlock element
+  //Generate row for each working hour and append to the timeBlocksContainerEl.
   $.each(hours, function (index, hour) {
-    $(timeBlockEl).append(createHourRow(hour, index));
+    $(timeBlocksContainer).append(createHourRow(hour, index));
   });
 
-  //On click save to localStorage and show message
-  $(timeBlockEl).on("click", ".saveBtn", function () {
+  //On click save to the localStorage and display notification message
+  $(timeBlocksContainer).on("click", ".saveBtn", function () {
     const message = $(this).siblings("textarea").val();
     const time = $(this).parent().data("hour");
     const currentRowIndex = $(this).parent().data("index");
@@ -53,11 +53,8 @@ $(function () {
       <span>localStorage</span>
       <i class="fas fa-check"></i>
       </h6>`;
-    showNotification(timeBlockEl, notification);
+    showNotification(timeBlocksContainer, notification);
   });
-
-  //Add created timeblocks on the page
-  $(".container").append(timeBlockEl);
 });
 
 //Self removing notification
@@ -68,5 +65,5 @@ function showNotification(parrentEl, notification) {
   $(parrentEl).prepend(notification);
   timeOutId = setTimeout(() => {
     $("#notification").remove();
-  }, 5000);
+  }, 4000);
 }
