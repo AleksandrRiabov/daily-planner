@@ -14,10 +14,11 @@
 
 
 ## Description 
-The daily planner app allows you to add information for each working hour of the day. The current hour is highlighted in red, the timeslot which already 
-in the past is grey and future timeslots are highlighted in green colour.
-After the Save button is clicked, all changes for the relevant hour will be saved into the localStorage, which will assure that information will stay on the page even after refresh.
+The daily planner app is a user-friendly and efficient tool that helps you to stay organized and on top of your schedule. With the ability to add information for each working hour of the day, you can easily plan out your tasks, meetings and appointments.
 
+The app features a sleek and intuitive interface that makes it easy to navigate and use. The current hour is highlighted in red, so you can quickly identify the time you're currently in. Timeslots that have already passed are displayed in a grey color, while future timeslots are highlighted in green, helping you to plan ahead.
+
+One of the most useful features of the daily planner app is the ability to save your changes. By clicking the "Save" button, all changes for the relevant hour will be stored in the local storage, ensuring that your information stays on the page even after a refresh. This eliminates the need for manual inputs every time you open the app, making it a real time saver.
 
 :point_right: [Go to Daily Planner Page](https://aleksandrriabov.github.io/daily-planner/) :point_left:
 
